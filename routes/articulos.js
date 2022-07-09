@@ -21,9 +21,9 @@ router.post('/',articulosPost);
 
 router.delete('/:id',articulosDelete);
 
-router.post('/imagen',upload.single('imagen'),articulosImagenPost)
+//router.post('/imagen',upload.single('imagen'),articulosImagenPost)
 
-router.get('/imagen/:image',articulosImagenGet)
+//router.get('/imagen/:image',articulosImagenGet)
 
 
 module.exports = router;
