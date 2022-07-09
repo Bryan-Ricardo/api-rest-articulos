@@ -17,7 +17,6 @@ const articulosGet = async(req,res)=>{
     res.json({
         articulos
     })
-    
 }
 
 const articulosPut = async(req,res)=>{
