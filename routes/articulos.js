@@ -1,7 +1,5 @@
 //Importaciones extras
-const express = require('express');
-
-const router = express();
+const {Router} = require('express');
 
 //Dependencias
 const multer = require('multer');
@@ -10,6 +8,8 @@ const multer = require('multer');
 //Mis importaciones
 const { articulosGet, articulosPut, articulosPost, articulosDelete ,articulosImagenPost,articulosImagenGet} = require('../controllers/articulos');
 
+
+const router = Router();
 const storageStrategy = multer.memoryStorage();
 const upload = multer({storage:storageStrategy})
 
