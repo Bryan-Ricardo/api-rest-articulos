@@ -6,7 +6,7 @@ const {dbConnection} = require('../database/config');
 class Server{
     constructor(){
         this.app = express();
-        this.port = process.env.PORT;
+        //this.port = process.env.PORT;
         this.usuariosPath = '/api/articulos'
 
         //conectar a la base de datos
@@ -39,9 +39,9 @@ class Server{
     }
 
     listen(){
-        this.app.listen(this.port, ()=>{
-            console.log('Servidor corriendo en puerto' ,this.port);
-        })
+        //this.app.listen(this.port, ()=>{
+          //  console.log('Servidor corriendo en puerto' ,this.port);
+        //})
     }
 
 }
