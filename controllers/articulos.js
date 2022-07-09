@@ -13,9 +13,13 @@ const Image = require('../models/image');
 
 const articulosGet = async(req,res)=>{
     //console.log(uuidv4());
+    /*
     const articulos = await Articulo.find();
     res.json({
         articulos
+    })*/
+    res.json({
+        "Hola": "Mundo"
     })
 }
 
