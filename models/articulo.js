@@ -7,7 +7,7 @@ const ArticuloSchema = Schema({
     },*/
     nombre:{
         type:String,
-        required:[true,'El correo es obligatorio'],
+        required:[true,'El nombre es obligatorio'],
         unique:true
     },
     img:{
