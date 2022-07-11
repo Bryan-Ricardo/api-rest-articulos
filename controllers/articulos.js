@@ -90,7 +90,9 @@ const articulosImagenPost = async(req,res)=>{
     const reasizedImageBuffer = await resizedImage.toBuffer();
     
     fs.writeFileSync(`uploads/${image.originalname}`,reasizedImageBuffer);
-    
+    res.json({
+        "Recibido": true //Nuevo cambio
+    })
     console.log(imagen);
 }
 
